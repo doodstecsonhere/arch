@@ -53,4 +53,6 @@ normcap
 penguins-eggs
 mkinitcpio-openswap &&
 #colorize and optimize terminal
-sudo sed -i 's/#Color/Color/' /etc/pacman.conf && sudo sed -i 's/#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf && sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf && mkdir /home/$USER/Downloads && wget https://averagelinuxuser.com/assets/images/posts/2019-01-18-linux-terminal-color/Linux_terminal_color.zip && sudo mv /home/$USER/Linux_terminal_color.zip Downloads && cd Downloads && unzip Linux_terminal_color.zip && sudo mv bash.bashrc /etc/bash.bashrc && sudo mv DIR_COLORS /etc/ && mv .bashrc ~/.bashrc && cd && sudo systemctl enable paccache.timer && sudo rm /home/$USER/Downloads/Linux_terminal_color.zip -r yay go && sudo pacman -Scc --noconfirm && sudo pacman -Rns --noconfirm $(pacman -Qtdq)
+sudo sed -i 's/#Color/Color/' /etc/pacman.conf && sudo sed -i 's/#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf && sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf && wget https://averagelinuxuser.com/assets/images/posts/2019-01-18-linux-terminal-color/Linux_terminal_color.zip && unzip Linux_terminal_color.zip && sudo mv bash.bashrc /etc/bash.bashrc && sudo mv DIR_COLORS /etc/ && mv .bashrc ~/.bashrc && sudo systemctl enable paccache.timer &&
+#cleanup
+sudo rm Linux_terminal_color.zip -r yay arch go && sudo pacman -Scc --noconfirm && sudo pacman -Rns --noconfirm $(pacman -Qtdq)
