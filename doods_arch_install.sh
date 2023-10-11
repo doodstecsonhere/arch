@@ -7,7 +7,6 @@ sudo pacman -Syu --noconfirm --needed \
 firefox \
 linux-firmware \
 pacman-contrib \
-unzip \
 lightdm-gtk-greeter-settings \
 kcalc \
 ksnip \
@@ -15,9 +14,6 @@ kdeconnect \
 sshfs \
 onboard \
 spotify-launcher \
-ibus \
-picom \
-xcompmgr \
 smplayer \
 qbittorrent \
 timeshift \
