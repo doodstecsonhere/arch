@@ -4,9 +4,7 @@ xfce4-dict \
 xfburn && \
 #install pacman packages
 sudo pacman -Syu --noconfirm --needed \
-vivaldi \
 firefox \
-yt-dlp \
 linux-firmware \
 pacman-contrib \
 unzip \
@@ -22,11 +20,9 @@ picom \
 xcompmgr \
 smplayer \
 qbittorrent \
-baobab \
 timeshift \
 neofetch \
-git \
-ffmpeg && \
+git && \
 #install yay
 git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm && cd && \
 #add chaotic aur repo
@@ -35,21 +31,17 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com && 
 yay -S --needed --noconfirm --sudoloop --removemake \
 realvnc-vnc-viewer \
 google-chrome \
-stremio \
 megasync \
 xfce4-panel-profiles \
 microsoft-edge-stable \
 teamviewer \
 zoom \
 bibata-cursor-theme \
-stacer \
+normcap \
 peazip \
 tgpt-bin \
-normcap \
 mugshot \
-ventoy-bin \
 timeshift-autosnap \
-normcap \
 penguins-eggs \
 mkinitcpio-openswap \
 chrome-remote-desktop && \
